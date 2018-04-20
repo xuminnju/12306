@@ -45,6 +45,7 @@ class TrainTicket(object):
         req2.headers = headers
         code = codegenerator('code.png', 287)
         #print(code)
+        # 通过打码兔的api接口，自动输入12306验证码
         data = {
             "answer": code,
             "login_site": "E",
